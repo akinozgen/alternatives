@@ -46,3 +46,19 @@ async function writeData() {
 2. ### php's http_build_query for key-value pair objects
 
 [goto file](https://github.com/akinozgen/alternatives/blob/master/http_build_query.js)
+
+```javascript
+import http_build_query from 'http_build_query';
+
+const loginPayload = {
+  username: 'root',
+  password: 'toor'
+};
+
+console.log(http_build_query(loginPayload));
+```
+Output:
+
+```raw
+username=root&password=toor
+```
