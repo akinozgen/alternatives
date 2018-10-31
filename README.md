@@ -74,3 +74,18 @@ const rows = document.querySelectorAll('tr');
 
 console.log(n2a(rows));
 ```
+
+4. ### Insister <small>(really annoying)</small>
+
+[goto file](https://github.com/akinozgen/alternatives/blob/master/insister.js)
+
+```javascript
+import ins from 'insister.js';
+
+// i: insister (which is this function)
+// c: condition (if returns false, function repeats itself)
+// cb: callback (runs if condtion is true)
+
+ins(ins, _ => prompt("Accept?") !== "yes", _ => alert("Thanks"));
+
+```
