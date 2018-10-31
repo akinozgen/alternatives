@@ -62,3 +62,15 @@ Output:
 ```raw
 username=root&password=toor
 ```
+
+3. ### NodeList to Array
+
+[goto file](https://github.com/akinozgen/alternatives/blob/master/nodelist_to_array.js)
+
+```javascript
+import n2a from 'nodelist_to_array.js';
+
+const rows = document.querySelectorAll('tr');
+
+console.log(n2a(rows));
+```
