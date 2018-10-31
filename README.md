@@ -82,9 +82,10 @@ console.log(n2a(rows));
 ```javascript
 import ins from 'insister.js';
 
-// i: insister (which is this function)
-// c: condition (if returns false, function repeats itself)
-// cb: callback (runs if condtion is true)
+// Parameters:
+//  (ins): insister (which is this function)
+//  (_ => prompt("Accept?") !== "yes"): condition (if returns false, function repeats itself)
+//  (_ => alert("Thanks")): callback (runs if condtion is true)
 
 ins(ins, _ => prompt("Accept?") !== "yes", _ => alert("Thanks"));
 
