@@ -98,13 +98,18 @@ ins(ins, _ => prompt("Accept?") !== "yes", _ => alert("Thanks"));
 ```php
 
 /**
- * asteriskMask($string: string, $count: number, $beginning: bool);
+ * asteriskMask($string: string, $length: number, $beginning: bool);
  *
  */
 require_once 'string-mask-php.php';
 
 $myUnprotectedPhoneNumber = '+90 588 4777 777 777 44';
 
-$myProtectedPhoneNumber = asteriskMask($myUnprotectedPhoneNumber, 3, true);
+echo asteriskMask($myUnprotectedPhoneNumber, 3) . "\n";
+echo asteriskMask($myUnprotectedPhoneNumber, 5, true) . "\n";
+echo asteriskMask('root', 5); // If length greater than strlen('root') new length is strlen('root') / 2
 
+// Output: +90 588 4777 777 77***
+//         *****88 4777 777 77 44
+//         ro**
 ```
