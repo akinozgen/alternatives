@@ -90,3 +90,21 @@ import ins from 'insister.js';
 ins(ins, _ => prompt("Accept?") !== "yes", _ => alert("Thanks"));
 
 ```
+
+4. ### String mask with *** (php)
+
+[goto file](https://github.com/akinozgen/alternatives/blob/master/string-mask-php.php)
+
+```php
+
+/**
+ * asteriskMask($string: string, $count: number, $beginning: bool);
+ *
+ */
+require_once 'string-mask-php.php';
+
+$myUnprotectedPhoneNumber = '+90 588 4777 777 777 44';
+
+$myProtectedPhoneNumber = asteriskMask($myUnprotectedPhoneNumber, 3, true);
+
+```
